@@ -115,7 +115,7 @@ export default function NordimpLanding() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+      <section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
         <div className="grid gap-4 md:grid-cols-4">
          {[
   {
@@ -154,9 +154,56 @@ export default function NordimpLanding() {
 ))}
         </div>
       </section>
+<section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
+  <div className="mb-14 max-w-2xl">
+    <p className="text-sm uppercase tracking-[0.24em] text-white/40">
+      Confianza y transparencia
+    </p>
 
+    <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white md:text-5xl">
+      Importación clara de principio a fin.
+    </h2>
+
+    <p className="mt-5 text-lg leading-8 text-white/55">
+      Te ayudamos a evitar sobrecostes, riesgos y coches problemáticos
+      antes de tomar una decisión.
+    </p>
+  </div>
+
+  <div className="grid gap-5 md:grid-cols-3">
+    {[
+      [
+        "Precio final transparente",
+        "Calculamos impuestos, transporte y gestión antes de reservar el coche.",
+      ],
+      [
+        "Verificación previa",
+        "Revisamos historial, estado y documentación para reducir riesgos.",
+      ],
+      [
+        "Seguimiento completo",
+        "Te acompañamos desde Alemania hasta la matriculación en España.",
+      ],
+    ].map(([title, text]: any) => (
+      <div
+        key={title}
+        className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 text-white transition duration-300 hover:-translate-y-1 hover:bg-white/[0.06]"
+      >
+        <div className="mb-6 h-2 w-12 rounded-full bg-white/70" />
+
+        <h3 className="text-xl font-semibold">
+          {title}
+        </h3>
+
+        <p className="mt-4 text-sm leading-7 text-white/60">
+          {text}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
       <section id="calculadora" className="border-y border-white/10 bg-white/[0.03]">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-10">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-32 lg:grid-cols-2 lg:px-10">
           <div>
             <p className="text-sm uppercase tracking-[0.24em] text-white/40">Calculadora Nordimp</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">Calcula el precio final antes de importar.</h2>
@@ -223,7 +270,7 @@ export default function NordimpLanding() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+      <section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
         <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
             <p className="text-sm uppercase tracking-[0.24em] text-white/40">Ejemplos</p>
@@ -237,9 +284,17 @@ export default function NordimpLanding() {
             ["Audi S5 Sportback", "41.500€", "47.200€", "Gran turismo"],
             ["Golf R", "34.900€", "39.800€", "Compacto pasional"],
           ].map(([model, origin, final, tag]: any) => (
-            <Card key={model} className="group rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
+            <Card key={model} className="group overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
               <div className="h-44 bg-gradient-to-br from-zinc-700 via-zinc-900 to-black" />
               <CardContent className="p-6">
+                <div className="relative mb-5 overflow-hidden rounded-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80"
+                    alt={model}
+                    className="h-52 w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                </div>
                 <p className="text-sm text-white/40">{tag}</p>
                 <h3 className="mt-2 text-2xl font-semibold">{model}</h3>
                 <div className="mt-5 space-y-3 text-sm text-white/60">
