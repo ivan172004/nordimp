@@ -43,21 +43,21 @@ export default function NordimpLanding() {
                 alt="Nordimp"
                 width={180}
                 height={60}
-                className="h-auto w-[360px]"
+                className="h-14 w-[360px]"
               />
             </div>
             <Button
               onClick={() => document.getElementById("calculadora")?.scrollIntoView({ behavior: "smooth" })}
-              className="h-12 rounded-full bg-white px-7 text-black hover:bg-white/90"
+              className="h-12 rounded-full bg-white px-7 text-black transition duration-300 hover:scale-[1.03] hover:bg-white/90 active:scale-[0.98] shadow-lg shadow-white/5 hover:shadow-white/20"
             >
               Calcular coste real <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </nav>
 
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             className="flex flex-col justify-center py-2 lg:py-8"
           >
             <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">
@@ -83,12 +83,13 @@ export default function NordimpLanding() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
             className="flex items-center"
           >
-            <div className="relative w-full rounded-[2rem] border border-white/10 bg-white/[0.03] p-3 shadow-2xl">
+            <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-blue-500/10 blur-3xl" />
+            <div className="relative z-10 animate-[slideIn_1s_ease-out] w-full rounded-[2rem] border border-white/10 bg-white/[0.03] p-3 shadow-2xl">
               <div className="aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-zinc-800 via-zinc-950 to-black">
               <img
                 src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
