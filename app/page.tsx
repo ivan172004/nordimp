@@ -117,11 +117,11 @@ export default function NordimpLanding() {
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="grid gap-4 md:grid-cols-4">
           {[
-            [Car, "Encuentra el coche", "Busca el vehículo que encaja contigo o pídenos ayuda."],
-            [Calculator, "Calcula el coste real", "Impuestos, transporte, gestión y matriculación claros desde el inicio."],
-            [FileText, "Verificamos y gestionamos", "Revisión, documentación y coordinación con proveedores."],
-            [Truck, "Lo recibes en España", "Transporte y proceso hasta dejarlo listo para circular."],
-          ].map(([Icon, title, text]) => (
+            { Icon: Car, title: "Encuentra el coche", text: "Busca el vehículo que encaja contigo o pídenos ayuda." },
+            { Icon: Calculator, title: "Calcula el coste real", text: "Impuestos, transporte, gestión y matriculación claros desde el inicio." },
+            { Icon: FileText, title: "Verificamos y gestionamos", text: "Revisión, documentación y coordinación con proveedores." },
+            { Icon: Truck, title: "Lo recibes en España", text: "Transporte y proceso hasta dejarlo listo para circular." },
+          ].map(({ Icon, title, text }) => (
             <Card key={title} className="rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none">
               <CardContent className="p-6">
                 <Icon className="mb-5 h-7 w-7 text-white/75" />
