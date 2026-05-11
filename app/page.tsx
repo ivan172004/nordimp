@@ -242,15 +242,35 @@ export default function NordimpLanding() {
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           {[
-            ["BMW M340i", "38.000€", "43.450€", "Premium deportivo"],
-            ["Audi S5 Sportback", "41.500€", "47.200€", "Gran turismo"],
-            ["Golf R", "34.900€", "39.800€", "Compacto pasional"],
-          ].map(([model, origin, final, tag]: any) => (
+  [
+    "BMW M340i",
+    "38.000€",
+    "43.450€",
+    "Premium deportivo",
+    "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop",
+  ],
+
+  [
+    "Audi S5 Sportback",
+    "41.500€",
+    "47.200€",
+    "Gran turismo",
+    "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=1200&auto=format&fit=crop",
+  ],
+
+  [
+    "Golf R",
+    "34.900€",
+    "39.800€",
+    "Compacto pasional",
+    "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+  ],
+].map(([model, origin, final, tag, image]: any) => (
             <Card key={model} className="group overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
               <CardContent className="p-6">
                 <div className="relative mb-5 overflow-hidden rounded-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80"
+                    src={image}
                     alt={model}
                     className="h-52 w-full object-cover transition duration-700 group-hover:scale-105"
                   />
