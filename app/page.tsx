@@ -32,7 +32,7 @@ export default function NordimpLanding() {
   }, [price, co2, fuel, country]);
 
   return (
-    <main className="min-h-screen bg-[#090B0F] text-white">
+    <main className="min-h-screen bg-[#111827] text-white">
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(120,170,255,0.22),transparent_36%),linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%)]" />
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pt-4 py-2 lg:grid-cols-2 lg:px-10 lg:py-4">
