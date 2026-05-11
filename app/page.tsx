@@ -172,18 +172,26 @@ export default function NordimpLanding() {
 
   <div className="grid gap-5 md:grid-cols-3">
     {[
-      [
-        "Precio final transparente",
-        "Calculamos impuestos, transporte y gestión antes de reservar el coche.",
-      ],
-      [
-        "Verificación previa",
-        "Revisamos historial, estado y documentación para reducir riesgos.",
-      ],
-      [
-        "Seguimiento completo",
-        "Te acompañamos desde Alemania hasta la matriculación en España.",
-      ],
+      {
+    Icon: Car,
+    title: "Encuentra el coche",
+    text: "Busca el vehículo ideal en Alemania.",
+  },
+  {
+    Icon: Calculator,
+    title: "Calcula el coste real",
+    text: "Conoce impuestos, transporte y gestión.",
+  },
+  {
+    Icon: FileText,
+    title: "Verificamos y gestionamos",
+    text: "Nos ocupamos de toda la documentación.",
+  },
+  {
+    Icon: Truck,
+    title: "Lo recibes en España",
+    text: "Entrega y matriculación listas.",
+  },
     ].map(([title, text]: any) => (
       <div
         key={title}
