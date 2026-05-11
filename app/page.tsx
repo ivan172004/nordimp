@@ -293,7 +293,6 @@ export default function NordimpLanding() {
             ["Golf R", "34.900€", "39.800€", "Compacto pasional"],
           ].map(([model, origin, final, tag]: any) => (
             <Card key={model} className="group overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
-              <div className="h-44 bg-gradient-to-br from-zinc-700 via-zinc-900 to-black" />
               <CardContent className="p-6">
                 <div className="relative mb-5 overflow-hidden rounded-2xl">
                   <img
