@@ -335,7 +335,7 @@ export default function NordimpLanding() {
   );
 }
 
-function Row({ label, value }) {
+function Row({ label, value }: { label: string; value: number }) {
   return (
     <div className="flex items-center justify-between gap-4">
       <span>{label}</span>
@@ -344,7 +344,7 @@ function Row({ label, value }) {
   );
 }
 
-function RowText({ label, value }) {
+function RowText({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-center justify-between gap-4">
       <span>{label}</span>
