@@ -331,6 +331,26 @@ export default function NordimpLanding() {
           </div>
         </div>
       </section>
+
+      <a
+  href="https://wa.me/679233784"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full border border-white/10 bg-[#11151d]/90 px-5 py-3 text-white shadow-2xl backdrop-blur-xl transition hover:scale-105 hover:bg-[#1a1f2b]"
+>
+  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500">
+    <span className="text-lg">💬</span>
+  </div>
+
+  <div className="hidden sm:block">
+    <p className="text-sm font-medium leading-none">
+      Habla con nosotros
+    </p>
+    <p className="mt-1 text-xs text-white/50">
+      Respuesta rápida
+    </p>
+  </div>
+</a>
     </main>
   );
 }
