@@ -247,7 +247,7 @@ export default function NordimpLanding() {
     "38.000€",
     "43.450€",
     "Premium deportivo",
-    "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop",
+    "https://images.pistonheads.com/nimg/46223/blobid16.jpg",
   ],
 
   [
@@ -255,7 +255,7 @@ export default function NordimpLanding() {
     "41.500€",
     "47.200€",
     "Gran turismo",
-    "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=1200&auto=format&fit=crop",
+    "https://a.ccdn.es/cnet/vehicles/19925814/e41c9399-0696-4c40-9ecb-03d201aece40.jpg/560x421cut/",
   ],
 
   [
@@ -263,7 +263,7 @@ export default function NordimpLanding() {
     "34.900€",
     "39.800€",
     "Compacto pasional",
-    "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+    "https://a.ccdn.es/cnet/2026/04/21/70464027/2102661279_g.jpg/252x189cut/",
   ],
 ].map(([model, origin, final, tag, image]: any) => (
             <Card key={model} className="group overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
