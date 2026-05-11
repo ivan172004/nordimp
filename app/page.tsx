@@ -235,7 +235,7 @@ export default function NordimpLanding() {
             ["BMW M340i", "38.000€", "43.450€", "Premium deportivo"],
             ["Audi S5 Sportback", "41.500€", "47.200€", "Gran turismo"],
             ["Golf R", "34.900€", "39.800€", "Compacto pasional"],
-          ].map(([model, origin, final, tag]) => (
+          ].map(([model, origin, final, tag]: any) => (
             <Card key={model} className="overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none">
               <div className="h-44 bg-gradient-to-br from-zinc-700 via-zinc-900 to-black" />
               <CardContent className="p-6">
