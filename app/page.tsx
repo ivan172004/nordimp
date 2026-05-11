@@ -35,8 +35,8 @@ export default function NordimpLanding() {
     <main className="min-h-screen bg-[#090B0F] text-white">
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(120,170,255,0.22),transparent_36%),linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%)]" />
-        <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-2 lg:grid-cols-2 lg:px-10 lg:py-4">
-          <nav className="col-span-full flex items-center justify-between">
+        <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pt-4 py-2 lg:grid-cols-2 lg:px-10 lg:py-4">
+          <nav className="sticky top-4 z-50 col-span-full flex items-center justify-between rounded-3xl border border-white/10 bg-black/30 px-6 py-4 backdrop-blur-xl">
             <div className="flex items-center">
               <Image
                 src="/logo.svg"
@@ -143,7 +143,7 @@ export default function NordimpLanding() {
     className="rounded-3xl border-white/10 bg-white/[0.04]"
   >
     <CardContent className="p-6">
-      <item.Icon className="mb-5 h-7 w-7 text-white/75" />
+     <item.Icon className="mb-5 h-7 w-7 text-white/75 transition duration-300 group-hover:scale-110 group-hover:text-white" />
       <h3 className="text-lg font-semibold">{item.title}</h3>
       <p className="mt-3 text-sm text-white/60">
         {item.text}
@@ -236,7 +236,7 @@ export default function NordimpLanding() {
             ["Audi S5 Sportback", "41.500€", "47.200€", "Gran turismo"],
             ["Golf R", "34.900€", "39.800€", "Compacto pasional"],
           ].map(([model, origin, final, tag]: any) => (
-            <Card key={model} className="overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none">
+            <Card key={model} className="group rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
               <div className="h-44 bg-gradient-to-br from-zinc-700 via-zinc-900 to-black" />
               <CardContent className="p-6">
                 <p className="text-sm text-white/40">{tag}</p>
