@@ -255,7 +255,7 @@ export default function NordimpLanding() {
     "41.500€",
     "47.200€",
     "Gran turismo",
-    "https://a.ccdn.es/cnet/vehicles/19925814/e41c9399-0696-4c40-9ecb-03d201aece40.jpg/560x421cut/",
+    "https://cdn.wallapop.com/images/10420/jw/mc/__/c10420p1203647427/i6118008117.jpg?pictureSize=W640",
   ],
 
   [
@@ -263,7 +263,7 @@ export default function NordimpLanding() {
     "34.900€",
     "39.800€",
     "Compacto pasional",
-    "https://a.ccdn.es/cnet/2026/04/21/70464027/2102661279_g.jpg/252x189cut/",
+    "https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/86eba1b8-ceb3-4663-9576-3d4db1df0fb7?rule=hw396_70",
   ],
 ].map(([model, origin, final, tag, image]: any) => (
             <Card key={model} className="group overflow-hidden rounded-3xl border-white/10 bg-white/[0.04] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-2xl">
