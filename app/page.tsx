@@ -115,45 +115,7 @@ export default function NordimpLanding() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
-        <div className="grid gap-4 md:grid-cols-4">
-         {[
-  {
-    Icon: Car,
-    title: "Encuentra el coche",
-    text: "Busca el vehículo ideal en Alemania.",
-  },
-  {
-    Icon: Calculator,
-    title: "Calcula el coste real",
-    text: "Conoce impuestos, transporte y gestión.",
-  },
-  {
-    Icon: FileText,
-    title: "Verificamos y gestionamos",
-    text: "Nos ocupamos de toda la documentación.",
-  },
-  {
-    Icon: Truck,
-    title: "Lo recibes en España",
-    text: "Entrega y matriculación listas.",
-  },
-].map((item) => (
-  <Card
-    key={item.title}
-    className="rounded-3xl border-white/10 bg-white/[0.04]"
-  >
-    <CardContent className="p-6">
-     <item.Icon className="mb-5 h-7 w-7 text-white/75 transition duration-300 group-hover:scale-110 group-hover:text-white" />
-      <h3 className="text-lg font-semibold">{item.title}</h3>
-      <p className="mt-3 text-sm text-white/60">
-        {item.text}
-      </p>
-    </CardContent>
-  </Card>
-))}
-        </div>
-      </section>
+      
 <section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
   <div className="mb-14 max-w-2xl">
     <p className="text-sm uppercase tracking-[0.24em] text-white/40">
@@ -172,26 +134,18 @@ export default function NordimpLanding() {
 
   <div className="grid gap-5 md:grid-cols-3">
     {[
-      {
-    Icon: Car,
-    title: "Encuentra el coche",
-    text: "Busca el vehículo ideal en Alemania.",
-  },
-  {
-    Icon: Calculator,
-    title: "Calcula el coste real",
-    text: "Conoce impuestos, transporte y gestión.",
-  },
-  {
-    Icon: FileText,
-    title: "Verificamos y gestionamos",
-    text: "Nos ocupamos de toda la documentación.",
-  },
-  {
-    Icon: Truck,
-    title: "Lo recibes en España",
-    text: "Entrega y matriculación listas.",
-  },
+      [
+        "Precio final transparente",
+        "Calculamos impuestos, transporte y gestión antes de reservar el coche.",
+      ],
+      [
+        "Verificación previa",
+        "Revisamos historial, estado y documentación para reducir riesgos.",
+      ],
+      [
+        "Seguimiento completo",
+        "Te acompañamos desde Alemania hasta la matriculación en España.",
+      ],
     ].map(([title, text]: any) => (
       <div
         key={title}
