@@ -72,11 +72,11 @@ export default function NordimpLanding() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button
                 onClick={() => document.getElementById("calculadora")?.scrollIntoView({ behavior: "smooth" })}
-                className="h-12 rounded-full bg-white px-7 text-black hover:bg-white/90"
+                className="h-12 rounded-full bg-white px-7 text-black transition duration-300 hover:scale-[1.03] hover:bg-white/90 active:scale-[0.98]"
               >
                 Calcular coste real <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" className="h-12 rounded-full border-white/15 bg-white/5 px-7 text-white hover:bg-white/10">
+              <Button className="h-12 rounded-full border-white/15 bg-white/5 px-7 text-white transition duration-300 hover:scale-[1.03] hover:bg-white/10 active:scale-[0.98]">
                 Ver cómo funciona
               </Button>
             </div>
@@ -212,7 +212,7 @@ export default function NordimpLanding() {
 
               <Button
               onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
-              className="mt-6 h-12 w-full rounded-full bg-white text-black hover:bg-white/90"
+              className="h-12 rounded-full bg-white px-7 text-black transition duration-300 hover:scale-[1.03] hover:bg-white/90 active:scale-[0.98]"
               >
               Quiero importar este coche <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -320,7 +320,7 @@ export default function NordimpLanding() {
     placeholder="Cuéntanos qué coche buscas o qué dudas tienes"
   />
 
-  <Button className="mt-2 h-12 rounded-full bg-white text-black hover:bg-white/90">
+  <Button className="mt-2 h-12 rounded-full bg-white text-black transition duration-300 hover:scale-[1.02] hover:bg-white/90 active:scale-[0.98]">
     Solicitar estudio gratuito
   </Button>
 
